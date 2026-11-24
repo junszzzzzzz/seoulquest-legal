@@ -1,0 +1,44 @@
+/* Seoul Quest public pages (privacy / support / share). Same tokens as src/styles/tokens.css. No external files. */
+:root {
+  color-scheme: light;
+  --sq-bg: #F6EFE2; --sq-card: #FFFCF5; --sq-cream: #FBF6EC; --sq-soft: #EFE6D6;
+  --sq-title: #173B2A; --sq-ink: #26231F; --sq-muted: #6B6358; --sq-line: #DDD0BC;
+  --sq-cta: #C0392B; --sq-cta-ink: #FFFFFF; --sq-sel-bg: #FCEDEA; --sq-yellow-soft: #FFF1C9;
+  --sq-sh1: 0 1px 2px rgba(38,35,31,.06), 0 4px 12px rgba(38,35,31,.06);
+  --sq-r-card: 16px; --sq-r-ctl: 12px;
+  --sq-logo-font: "Fraunces", "Noto Serif KR", "Noto Serif JP", Georgia, serif;
+  --sq-font: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", "PingFang TC", "Noto Sans KR", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--sq-bg); color: var(--sq-ink); font: 16px/1.6 var(--sq-font); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 20px 16px 56px; }
+header.top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+header.top img { width: 40px; height: 40px; border-radius: 10px; }
+.brand { font-family: var(--sq-logo-font); font-weight: 600; font-size: 20px; color: var(--sq-title); text-decoration: none; }
+nav.lang { display: flex; gap: 8px; margin: 12px 0 20px; flex-wrap: wrap; }
+nav.lang a { padding: 6px 12px; border: 1px solid var(--sq-line); border-radius: 999px; color: var(--sq-title); text-decoration: none; background: var(--sq-card); font-size: 14px; }
+h1, h2, h3 { color: var(--sq-title); line-height: 1.25; }
+h1 { font-family: var(--sq-logo-font); font-size: 30px; margin: 8px 0 4px; }
+h2 { font-size: 20px; margin: 28px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 6px; }
+section.card, .card { background: var(--sq-card); border-radius: var(--sq-r-card); box-shadow: var(--sq-sh1); padding: 18px 18px 8px; margin: 16px 0; }
+p, li { overflow-wrap: anywhere; }
+.muted, .meta { color: var(--sq-muted); font-size: 14px; }
+.note { background: var(--sq-yellow-soft); border-radius: var(--sq-r-ctl); padding: 10px 12px; color: var(--sq-title); }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: start; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--sq-line); }
+th { color: var(--sq-title); }
+code { background: var(--sq-soft); padding: 1px 5px; border-radius: 6px; font-size: 14px; }
+a { color: var(--sq-title); }
+details { border-bottom: 1px solid var(--sq-line); padding: 10px 0; }
+details:last-child { border-bottom: 0; }
+summary { cursor: pointer; font-weight: 600; color: var(--sq-title); min-height: 44px; display: flex; align-items: center; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px; border-radius: var(--sq-r-ctl); font-weight: 600; text-decoration: none; border: 0; font: inherit; font-weight: 600; cursor: pointer; }
+.btn-cta { background: var(--sq-cta); color: var(--sq-cta-ink); }
+.btn-2 { background: var(--sq-card); color: var(--sq-title); border: 1px solid var(--sq-line); }
+.btn[aria-disabled="true"] { background: var(--sq-soft); color: var(--sq-muted); cursor: default; }
+.actions { display: flex; flex-direction: column; gap: 10px; margin: 18px 0 8px; }
+footer { margin-top: 32px; color: var(--sq-muted); font-size: 14px; }
+footer a { margin-inline-end: 12px; }
